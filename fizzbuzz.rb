@@ -10,11 +10,12 @@ require 'divisible'
 1.upto(100) do |n|
 	if n.divisible_by?(3) && n.divisible_by?(5)
 		puts "FizzBuzz"
-	elsif n.divisible_by?(3) && n.divisible_by?(5) != true
+	elsif n.divisible_by?(3)
 		puts "Fizz"
-	elsif n.divisible_by?(5) && n.divisible_by?(3) != true
+	elsif n.divisible_by?(5)
 		puts "Buzz"
 	else
 		puts n
 	end
 end
+
