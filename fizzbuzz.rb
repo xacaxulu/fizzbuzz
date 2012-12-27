@@ -3,19 +3,15 @@
 #and for the multiples of five print "Buzz". 
 #For numbers which are multiples of both three and five print "FizzBuzz". 
 
-require "rubygems"
-require 'divisible'
-
-
-1.upto(100) do |n|
-	if n.divisible_by?(3) && n.divisible_by?(5)
+1.upto(100) do |i|
+	if i % 3 == 0 && i % 5 == 0
 		puts "FizzBuzz"
-	elsif n.divisible_by?(3)
+	elsif i % 3 == 0
 		puts "Fizz"
-	elsif n.divisible_by?(5)
+	elsif i % 5 == 0
 		puts "Buzz"
 	else
-		puts n
+		puts i
 	end
 end
 
